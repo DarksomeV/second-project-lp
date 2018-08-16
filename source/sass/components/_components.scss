@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  background-color: #fff;
+  font-family: $font-family-base;
+  color: $default-text-color;
+}
+
+/* ===== Default component start ===== */
+/*
+Buttons, text, title, section, small-section header, footer,
+form elements, icons, tabs, blockquote, container
+*/
+
+.default-section {
+  padding: 110px 0 120px;
+}
+
+.small-section {
+  padding: 60px 0;
+}
+
+.title{
+
+  text-align: center;
+
+  .top-title{
+    font-family: $font-family-design;
+    font-size: $top-titile-size;
+    color: $title-color;
+  }
+
+  .bottom-titile{
+    font-family: $font-family-elems;
+    font-size: $bottom-titile-size;
+    font-weight: bold;
+    color: $title-color;
+  }
+
+
+  .default-text {
+    font-size: $default-text-size;
+    line-height: $default-text-line-height;
+    font-weight: 300;
+  }
+
+}
+/* ===== Default component end ===== */

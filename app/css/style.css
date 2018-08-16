@@ -1,7 +1,34 @@
 body {
-  font-size: 10px; }
+  margin: 0;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #999999; }
 
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+/* ===== Default component start ===== */
+/*
+Buttons, text, title, section, small-section header, footer,
+form elements, icons, tabs, blockquote, container
+*/
+.default-section {
+  padding: 110px 0 120px; }
+
+.small-section {
+  padding: 60px 0; }
+
+.title {
+  text-align: center; }
+  .title .top-title {
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    color: #333333; }
+  .title .bottom-titile {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333; }
+  .title .default-text {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300; }
+
+/* ===== Default component end ===== */
