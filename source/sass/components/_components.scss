@@ -45,3 +45,117 @@ form elements, icons, tabs, blockquote, container
 
 }
 /* ===== Default component end ===== */
+
+// Default-classes start
+
+.navbar-fixed-top{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+// Default-classes end
+
+
+//HEADER START
+
+header{
+  font-family: $font-family-elems;
+
+  .navbar-brand{
+    font-weight: 700;
+    font-size: 30px;
+    &:hover{
+      color: #ffffff;
+    }
+  }
+
+  .nav-menu{
+    font-weight: 400;
+    font-size: $nav-items-text-size;
+
+    .nav-item + .nav-item{
+        margin-left: 30px;
+    }
+
+    .nav-item{
+      padding: 10px 0;
+      &:hover{
+        border-bottom: 3px solid $nav-active-color;
+        a{
+          color: $nav-active-color;
+        }
+      }
+
+      &.active{
+        border-bottom: 3px solid $nav-active-color;
+        a{
+          color: $nav-active-color;
+        }
+      }
+    }
+
+  }
+
+  a{
+    color: #fff;
+  }
+}
+
+//HEADER END
+
+//PROMOBLOCK START
+
+.promoblock{
+  background: url(../img/promo_block_img.jpg) no-repeat center / cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+
+  .promoblock-content{
+    height: min-content;
+  }
+}
+
+.promoblock-content{
+  .promoblock-title{
+    color: #fff;
+    padding-bottom: 70px;
+    .promoblock-title-top{
+      font-size: 72px;
+      font-family: $font-family-design;
+    }
+    .promoblock-title-bottom {
+      font-size: 150px;
+      font-family: $font-family-elems;
+      font-weight: 700;
+      letter-spacing: 0em;
+      line-height: 0.8;
+    }
+  }
+
+  hr{
+    margin: 0 auto;
+    border-top: 3px solid #ffffff;
+  }
+
+  .promoblock-btn{
+    color: #ffffff;
+    padding: 10px 30px;
+    font-family: $font-family-elems;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+  }
+}
+
+
+
+//PROMOBLOCK END

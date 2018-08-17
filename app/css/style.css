@@ -32,3 +32,80 @@ form elements, icons, tabs, blockquote, container
     font-weight: 300; }
 
 /* ===== Default component end ===== */
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+header {
+  font-family: "Montserrat", sans-serif; }
+  header .navbar-brand {
+    font-weight: 700;
+    font-size: 30px; }
+    header .navbar-brand:hover {
+      color: #ffffff; }
+  header .nav-menu {
+    font-weight: 400;
+    font-size: 14px; }
+    header .nav-menu .nav-item + .nav-item {
+      margin-left: 30px; }
+    header .nav-menu .nav-item {
+      padding: 10px 0; }
+      header .nav-menu .nav-item:hover {
+        border-bottom: 3px solid #fce38a; }
+        header .nav-menu .nav-item:hover a {
+          color: #fce38a; }
+      header .nav-menu .nav-item.active {
+        border-bottom: 3px solid #fce38a; }
+        header .nav-menu .nav-item.active a {
+          color: #fce38a; }
+  header a {
+    color: #fff; }
+
+.promoblock {
+  background: url(../img/promo_block_img.jpg) no-repeat center/cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px; }
+  .promoblock .promoblock-content {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content; }
+
+.promoblock-content .promoblock-title {
+  color: #fff;
+  padding-bottom: 70px; }
+  .promoblock-content .promoblock-title .promoblock-title-top {
+    font-size: 72px;
+    font-family: "Kaushan Script", cursive; }
+  .promoblock-content .promoblock-title .promoblock-title-bottom {
+    font-size: 150px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0em;
+    line-height: 0.8; }
+
+.promoblock-content hr {
+  margin: 0 auto;
+  border-top: 3px solid #ffffff; }
+
+.promoblock-content .promoblock-btn {
+  color: #ffffff;
+  padding: 10px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: transparent;
+  border: 3px solid #ffffff; }
