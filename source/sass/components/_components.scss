@@ -1,8 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+html{
+  font-size: 1.3888vh;
+}
+
 body{
   margin: 0;
   background-color: #fff;
   font-family: $font-family-base;
   color: $default-text-color;
+}
+
+.container{
+  width: 1200px;
 }
 
 /* ===== Default component start ===== */
@@ -12,8 +32,13 @@ form elements, icons, tabs, blockquote, container
 */
 
 .default-section {
-  padding: 110px 0 120px;
-}
+  padding: 5.5rem 0 8rem;
+
+  .title {
+    margin-bottom: 1.2em;
+  }
+
+  }
 
 .small-section {
   padding: 60px 0;
@@ -29,20 +54,24 @@ form elements, icons, tabs, blockquote, container
     color: $title-color;
   }
 
-  .bottom-titile{
+  .bottom-title{
     font-family: $font-family-elems;
     font-size: $bottom-titile-size;
     font-weight: bold;
     color: $title-color;
   }
 
-
-  .default-text {
-    font-size: $default-text-size;
-    line-height: $default-text-line-height;
-    font-weight: 300;
+  hr.title-hr{
+    margin-top: 1.2em;
+    border-color: $title-border-color;
   }
 
+}
+
+.default-text {
+  font-size: $default-text-size;
+  line-height: $default-text-line-height;
+  font-weight: 300;
 }
 /* ===== Default component end ===== */
 
@@ -57,6 +86,13 @@ form elements, icons, tabs, blockquote, container
 }
 
 // Default-classes end
+
+.main{
+  hr{
+    margin: 0 auto;
+    border-top: 3px solid #ffffff;
+  }
+}
 
 
 //HEADER START
@@ -110,11 +146,11 @@ header{
 
 .promoblock{
   background: url(../img/promo_block_img.jpg) no-repeat center / cover;
-  height: 100vh;
+  padding: 15rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  //padding-top: 70px;
 
   .promoblock-content{
     height: min-content;
@@ -124,23 +160,19 @@ header{
 .promoblock-content{
   .promoblock-title{
     color: #fff;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     .promoblock-title-top{
-      font-size: 72px;
+      font-size: 4.8rem;
       font-family: $font-family-design;
     }
     .promoblock-title-bottom {
-      font-size: 150px;
+      font-size: 10rem;
       font-family: $font-family-elems;
       font-weight: 700;
+      max-width: 800px;
       letter-spacing: 0em;
-      line-height: 0.8;
+      line-height: 1;
     }
-  }
-
-  hr{
-    margin: 0 auto;
-    border-top: 3px solid #ffffff;
   }
 
   .promoblock-btn{
@@ -156,6 +188,184 @@ header{
   }
 }
 
+.office-wrapper{
 
+  margin-top: 6.3rem;
 
+  .office-item{
+    position: relative;
+
+    &.office-item-second {
+      .office-item-hover {
+        background: linear-gradient(0deg, rgba(252, 227, 138, .8) 0%, rgba(243, 129, 129, .8) 100%), url(../img/office-img-2.jpg);
+      }
+    }
+
+    &.office-item-third {
+      .office-item-hover {
+        background: linear-gradient(0deg, rgba(252, 227, 138, .8) 0%, rgba(243, 129, 129, .8) 100%), url(../img/office-img-3.jpg);
+      }
+    }
+
+    .office-item-hover{
+      opacity: 0;
+      position: absolute;
+      top: -1rem;
+      left: -1rem;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(252,227,138,.8) 0%, rgba(243,129,129,.8) 100%), url(../img/office-img-1.jpg);
+      transition: all 0.5s linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .office-item-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: $font-family-elems;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      span{
+        display: block;
+      }
+
+    }
+
+    & .office-item-img{
+      transition: background 0.7s;
+      transition: opacity 2s cubic-bezier(0.1, -0.6, 0.2, 0);
+    }
+
+    &:hover .office-item-img{
+      background: $substrate-color;
+        img{
+          opacity: 0;
+        }
+    }
+
+    &:hover .office-item-hover{
+      opacity: 1;
+    }
+  }
+}
 //PROMOBLOCK END
+
+//HAPPY NUMBERS START
+
+.happy-numbers{
+  background-color: $substrate-color;
+
+  .happy-numbers-wrapper{
+    display: flex;
+
+    .happy-number-block{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-family: $font-family-elems;
+      border-right: 1px solid #ffffff;
+      padding: 4rem 0;
+
+      .amount{
+        font-weight: 700;
+        font-size: 4.8rem;
+      }
+
+      .happy-number-block-title{
+        font-size: $nav-items-text-size;
+      }
+
+      &:first-child{
+        border-left: 1px solid #ffffff;;
+      }
+    }
+
+  }
+}
+
+//HAPPY NUMBERS END
+
+
+//SERVICES START
+
+.services {
+
+  .row+.row{
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .service{
+    display: flex;
+    padding: 4rem 0 3.33rem;
+
+    .service-icon{
+      margin: 0 2em;
+      max-height: 3rem;
+
+      img{
+        max-height: 100%;
+      }
+    }
+
+    .service-description{
+
+      .service-title{
+        color: $title-color;
+        font-family: $font-family-elems;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .service-text{
+        font-size: 1rem;
+        line-height: 1.6rem;
+      }
+    }
+
+  }
+
+}
+
+//SERVICES END
+
+
+//DESIGN START
+
+.design-block{
+  background:rgba(255, 255, 255, .85) url(../img/design-background.jpg) no-repeat center / cover;
+  background-blend-mode: screen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5.5rem;
+
+  .design-devices{
+
+    width: max-content;
+    position: relative;
+    margin: 0 auto;
+
+    .mobile{
+      position: absolute;
+      bottom: -77px;
+      right: -66px;
+    }
+
+    img{
+      display: inline-block;
+    }
+
+  }
+}
+
+//DESIGN END
