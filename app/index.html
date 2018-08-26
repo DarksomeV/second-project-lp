@@ -11,8 +11,15 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="addons/bootstrap/css/bootstrap.css">
 
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="addons/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="addons/slick/slick-theme.css"/>
+
     <!--Custom styles-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 <!--HEADER START-->
@@ -283,7 +290,6 @@
         </div>
     </div>
     <!--SERVICES END-->
-</div>
 <!--DEIGN START-->
 <div class="design-block">
     <div class="container">
@@ -306,109 +312,73 @@
     </div>
 </div>
 <!--DESIGN END-->
-<div class="services">
+
+<!--WHAT WE DO START-->
+<div class="what-we-do">
     <div class="default-section">
         <div class="container">
             <div class="title">
                 <div class="top-title">
-                    <span>We work with</span>
+                    <span>Service</span>
                 </div>
                 <div class="bottom-title">
-                    <span>Amazing services</span>
+                    <span>What we do</span>
                 </div>
                 <hr class="title-hr" width=60px align="center">
             </div>
             <!--/title-->
             <div class="row">
-                <div class="col-4">
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="img/service-alarm.png" alt="">
-                        </div>
-                        <div class="service-description">
-                            <div class="service-title">
-                                <span>Photography</span>
-                            </div>
-                            <div class="service-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="img/service-graph.png" alt="">
-                        </div>
-                        <div class="service-description">
-                            <div class="service-title">
-                                <span>Web design</span>
-                            </div>
-                            <div class="service-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="img/service-computer.png" alt="">
-                        </div>
-                        <div class="service-description">
-                            <div class="service-title">
-                                <span>Creativity</span>
-                            </div>
-                            <div class="service-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12">
+                    <p class="what-we-do-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="img/service-book.png" alt="">
-                        </div>
-                        <div class="service-description">
-                            <div class="service-title">
-                                <span>Seo</span>
-                            </div>
-                            <div class="service-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
+                <div class="col-6">
+                    <div class="what-we-do-image">
+                        <img src="img/what-we-do.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="img/service-home.png" alt="">
+                <div class="col-6">
+                    <div class="box">
+                    <div class="box-link">
+                        <div class="box-description text-uppercase">
+                            <img src="img/box-picture.png" alt="picture">
+                            <span>Photography</span>
                         </div>
-                        <div class="service-description">
-                            <div class="service-title">
-                                <span>CSS/HTML</span>
-                            </div>
-                            <div class="service-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
+                        <button></button>
+                    </div>
+                    <div class="box-text visible">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="img/service-img.png" alt="">
+                    <div class="box">
+                        <div class="box-link">
+                            <div class="box-description text-uppercase">
+                                <img src="img/box-equlizer.png" alt="picture">
+                                <span>Creativiti</span>
+                            </div>
+                            <button></button>
                         </div>
-                        <div class="service-description">
-                            <div class="service-title">
-                                <span>Digital</span>
+                        <div class="box-text hidden">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-link">
+                            <div class="box-description text-uppercase">
+                                <img src="img/box-circle.png" alt="picture">
+                                <span>Web Design</span>
                             </div>
-                            <div class="service-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
+                            <button></button>
+                        </div>
+                        <div class="box-text hidden">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
                 </div>
@@ -416,5 +386,66 @@
         </div>
     </div>
 </div>
+<!--WHAT WE DO END-->
+
+<!--CAROUSEL REVIEWS START-->
+<div class="reviews">
+    <div class="container">
+        <div class="reviews-carousel">
+            <div class="review d-flex">
+                <div class="review-image">
+                    <img src="img/review-img.png" alt="">
+                </div>
+                <div class="review-text">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                    <div class="review-author">
+                        <hr class="title-hr" width=60px align="center">
+                        <span>Jon Doe</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review d-flex">
+                <div class="review-image">
+                    <img src="img/review-img.png" alt="">
+                </div>
+                <div class="review-text">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                    <div class="review-author">
+                        <hr class="title-hr" width=60px align="center">
+                        <span>Kahn Opeo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review d-flex">
+                <div class="review-image">
+                    <img src="img/review-img.png" alt="">
+                </div>
+                <div class="review-text">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                    <div class="review-author">
+                        <hr class="title-hr" width=60px align="center">
+                        <span>Paulo Pan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--CAROUSEL REVIEWS END-->
+</div>
+<!--Slick-->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="addons/slick/slick.js"></script>
+
+<script src="addons/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="addons/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/script.js"></script>
+
+<!-- Init plugins -->
+<script src="js/init.js"></script>
 </body>
 </html>
