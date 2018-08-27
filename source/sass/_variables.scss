@@ -15,5 +15,29 @@ $default-text-color: #999999;
 $title-border-color: #f38181;
 $substrate-color: #95e1d3;
 $light-border-color: #e5e5e5;
+$grey-section-color: #f8f8f8;
+
+
+//Mixins
+@mixin item-hover() {
+  opacity: 0;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(252,227,138,.8) 0%, rgba(243,129,129,.8) 100%), url(../img/office-img-1.jpg);
+  transition: all 0.5s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin auto-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 

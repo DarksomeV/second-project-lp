@@ -147,9 +147,7 @@ header{
 .promoblock{
   background: url(../img/promo_block_img.jpg) no-repeat center / cover;
   padding: 15rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include auto-center();
   //padding-top: 70px;
 
   .promoblock-content{
@@ -208,22 +206,10 @@ header{
     }
 
     .office-item-hover{
-      opacity: 0;
-      position: absolute;
-      top: -1rem;
-      left: -1rem;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(0deg, rgba(252,227,138,.8) 0%, rgba(243,129,129,.8) 100%), url(../img/office-img-1.jpg);
-      transition: all 0.5s linear;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include item-hover();
       .office-item-title{
-        display: flex;
+        @include auto-center();
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         font-family: $font-family-elems;
         font-weight: 700;
         font-size: 1.2rem;
@@ -266,10 +252,8 @@ header{
 
     .happy-number-block{
       width: 20%;
-      display: flex;
+      @include auto-center();
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       color: #ffffff;
       font-family: $font-family-elems;
       border-right: 1px solid #ffffff;
@@ -435,7 +419,7 @@ header{
 
 .reviews{
   padding: 4.8rem 0;
-  background-color: #f8f8f8;
+  background-color: $grey-section-color;
 
   .review{
     padding: 0 5rem;
@@ -500,3 +484,104 @@ header{
 
 
 //REVIEWS CAROUSEL END
+
+//MEET OUR TEAM START
+
+.meet-team{
+
+  &-wrapper{
+    .member{
+      width: max-content;
+      margin: 0 auto;
+      margin-top: 2rem;
+      text-align: center;
+      &-name{
+        font-family: $font-family-elems;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: $nav-items-text-size;
+        color: $title-color;
+      }
+
+      &-position{
+        font-style: italic;
+      }
+    }
+  }
+
+  &-description{
+    margin-bottom: 6rem;
+  }
+
+  &-item{
+    position: relative;
+
+
+    &.meet-team-item-first {
+      .meet-team-item-hover {
+        background: linear-gradient(0deg, rgba(252, 227, 138, .8) 0%, rgba(243, 129, 129, .8) 100%), url(../img/team-member-1.jpg);
+      }
+    }
+
+    &.meet-team-item-second {
+      .meet-team-item-hover {
+        background: linear-gradient(0deg, rgba(252, 227, 138, .8) 0%, rgba(243, 129, 129, .8) 100%), url(../img/team-member-2.jpg);
+      }
+    }
+
+    &.meet-team-item-third {
+      .meet-team-item-hover {
+        background: linear-gradient(0deg, rgba(252, 227, 138, .8) 0%, rgba(243, 129, 129, .8) 100%), url(../img/team-member-3.jpg);
+      }
+    }
+
+    &-hover{
+      @include item-hover();
+
+      .member-links{
+        ul{
+          list-style: none;
+          padding: 0;
+
+          a{
+            width: 3.7rem;
+            height: 3.7rem;
+            background-color: #fce38a;
+            color: #f38181;
+            font-size: $top-titile-size;
+            @include auto-center();
+            transition: all 1s ease-out;
+
+            &:hover{
+              background-color: #f38181;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    &:hover .meet-team-item-img{
+      background: $substrate-color;
+      img{
+        opacity: 0;
+      }
+    }
+
+    &:hover .meet-team-item-hover{
+      opacity: 1;
+    }
+  }
+}
+
+//MEET OUR TEAM END
+
+//LOGO SECTION START
+
+.logo-section{
+  padding: 4.8rem 0;
+  background-color: $grey-section-color;
+}
+
+
+//LOGO SECTION END
