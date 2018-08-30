@@ -32,6 +32,20 @@ $grey-section-color: #f8f8f8;
   justify-content: center;
   align-items: center;
 }
+@mixin portfolio-item-hover() {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(252,227,138,.8) 0%, rgba(243,129,129,.8) 100%);
+  transition: all 0.5s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @mixin auto-center() {
   display: flex;

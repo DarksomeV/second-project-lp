@@ -118,6 +118,7 @@ header {
 .promoblock {
   background: url(../img/promo_block_img.jpg) no-repeat center/cover;
   padding: 15rem 0;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +360,17 @@ header {
   .reviews .review {
     padding: 0 5rem; }
     .reviews .review .review-text {
-      margin-left: 50px; }
+      margin-left: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .reviews .review .review-text p {
         font-size: 1.6rem;
         font-style: italic;
@@ -482,3 +493,161 @@ header {
 .logo-section {
   padding: 4.8rem 0;
   background-color: #f8f8f8; }
+
+.portfolio-box {
+  margin-top: 6rem; }
+
+.column-row {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.portfolio-item {
+  position: relative; }
+  .portfolio-item-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.8)), to(rgba(243, 129, 129, 0.8)));
+    background: linear-gradient(0deg, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .portfolio-item-hover .portfolio-item-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #ffffff; }
+      .portfolio-item-hover .portfolio-item-title span {
+        display: block; }
+      .portfolio-item-hover .portfolio-item-title img {
+        max-width: 30px; }
+      .portfolio-item-hover .portfolio-item-title .portfolio-name {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.93rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 1rem 0 .2rem; }
+      .portfolio-item-hover .portfolio-item-title .portfolio-description {
+        font-style: italic; }
+  .portfolio-item:hover .portfolio-item-hover {
+    opacity: 1; }
+
+.requests {
+  padding-bottom: 5.5rem; }
+  .requests .request {
+    padding: 0 5rem; }
+    .requests .request .request-text {
+      margin-left: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .requests .request .request-text p {
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: 300; }
+      .requests .request .request-text .request-author {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .requests .request .request-text .request-author hr {
+          border-color: #f38181;
+          margin: 0;
+          margin-right: 5px; }
+        .requests .request .request-text .request-author span {
+          font-family: "Kaushan Script", cursive;
+          font-size: 1.6rem;
+          color: #333333; }
+
+.slick-prev:before {
+  content: url(../img/arrow-prev.png); }
+
+[dir='rtl'] .slick-prev:before {
+  content: url(../img/arrow-next.png); }
+
+.slick-next {
+  right: -25px; }
+
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px; }
+
+.slick-next:before {
+  content: url(../img/arrow-next.png); }
+
+[dir='rtl'] .slick-next:before {
+  content: url(../img/arrow-prev.png); }
+
+.people-say {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url(../img/design-background.jpg) no-repeat center/cover;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url(../img/design-background.jpg) no-repeat center/cover;
+  padding: 15rem 0;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .people-say .request {
+    padding: 40px; }
+  .people-say .request-image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .people-say .request-text {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    margin-left: 1.8rem; }
+  .people-say .request-author {
+    color: #333333; }
+    .people-say .request-author span {
+      display: block; }
+    .people-say .request-author .name {
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.93rem;
+      font-weight: 700; }
+    .people-say .request-author .position {
+      font-style: italic;
+      font-weight: 300; }
+    .people-say .request-author hr {
+      margin: 1rem 0;
+      border-color: #f38181; }

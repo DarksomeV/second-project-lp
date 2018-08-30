@@ -147,6 +147,7 @@ header{
 .promoblock{
   background: url(../img/promo_block_img.jpg) no-repeat center / cover;
   padding: 15rem 0;
+  background-attachment: fixed;
   @include auto-center();
   //padding-top: 70px;
 
@@ -426,6 +427,9 @@ header{
 
     .review-text{
       margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       p{
         font-size: $top-titile-size;
@@ -585,3 +589,172 @@ header{
 
 
 //LOGO SECTION END
+
+//SOME OTHER WORKS START
+.portfolio-box{
+  margin-top: 6rem;
+}
+
+.column-row{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item{
+  position: relative;
+
+
+  &-hover{
+    @include portfolio-item-hover();
+    .portfolio-item-title{
+      span{
+        display: block;
+      }
+
+      img{
+        max-width: 30px;
+      }
+
+      .portfolio-name{
+        font-family: $font-family-elems;
+        font-size: $nav-items-text-size;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 1rem 0 .2rem;
+      }
+
+      .portfolio-description{
+        font-style: italic;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ffffff;
+    }
+  }
+
+  &:hover .portfolio-item-hover{
+    opacity: 1;
+  }
+}
+
+//SOME OTHER WORKS END
+
+//REQUEST CAROUSEL START
+
+.requests{
+  padding-bottom: 5.5rem;
+
+  .request{
+    padding: 0 5rem;
+
+    .request-text{
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p{
+        font-size: $top-titile-size;
+        font-style: italic;
+        font-weight: 300;
+      }
+
+      .request-author{
+        display: flex;
+        align-items: center;
+        hr{
+          border-color: #f38181;
+          margin: 0;
+          margin-right: 5px;
+        }
+
+        span{
+          font-family: $font-family-design;
+          font-size: $top-titile-size;
+          color: $title-color;
+        }
+      }
+    }
+
+
+  }
+}
+
+.slick-prev:before
+{
+  content: url(../img/arrow-prev.png);
+}
+[dir='rtl'] .slick-prev:before
+{
+  content: url(../img/arrow-next.png);
+}
+
+.slick-next
+{
+  right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+  right: auto;
+  left: -25px;
+}
+.slick-next:before
+{
+  content: url(../img/arrow-next.png);
+}
+[dir='rtl'] .slick-next:before
+{
+  content:  url(../img/arrow-prev.png);
+
+}
+
+
+//REQUEST CAROUSEL END
+
+//WHAT PEOPLE SAY START
+.people-say {
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url(../img/design-background.jpg) no-repeat center / cover;
+  padding: 15rem 0;
+  background-attachment: fixed;
+  @include auto-center();
+
+  .request{
+    padding: 40px;
+  }
+
+  .request-image{
+    flex: 1;
+  }
+
+  .request-text{
+    flex: 4;
+    margin-left: 1.8rem;
+  }
+
+  .request-author{
+    color:$title-color;
+    span{
+      display: block;
+    }
+
+    .name{
+      text-transform: uppercase;
+      font-family: $font-family-elems;
+      font-size: $nav-items-text-size;
+      font-weight: 700;
+    }
+    
+    .position{
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    hr{
+      margin: 1rem 0;
+      border-color: #f38181;
+    }
+  }
+}
+//WHAT PEOPLE SAY END
