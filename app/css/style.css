@@ -651,3 +651,50 @@ header {
     .people-say .request-author hr {
       margin: 1rem 0;
       border-color: #f38181; }
+
+.latest-blog .posts {
+  margin-top: 6rem; }
+
+.latest-blog .post .post-img-container {
+  position: relative; }
+  .latest-blog .post .post-img-container .post-data {
+    position: absolute;
+    left: -2%;
+    bottom: 4%;
+    background-color: #95e1d3;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    padding: 1rem;
+    line-height: 1; }
+    .latest-blog .post .post-img-container .post-data .day {
+      font-size: 2rem;
+      font-weight: 700; }
+    .latest-blog .post .post-img-container .post-data .month {
+      font-size: 1rem;
+      font-style: italic; }
+    .latest-blog .post .post-img-container .post-data span {
+      display: block; }
+
+.latest-blog .post .post-text {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1.33rem; }
+  .latest-blog .post .post-text .post-title {
+    font-family: "Montserrat", sans-serif;
+    color: #333333;
+    font-size: 0.93rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1.33rem 0;
+    line-height: 1; }
+
+.latest-blog .post .post-interaction {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 1.33rem; }
+  .latest-blog .post .post-interaction .views {
+    margin-right: 1.33em; }
+
+.social-blog .logo-social {
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif; }

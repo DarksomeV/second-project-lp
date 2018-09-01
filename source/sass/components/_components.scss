@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -6,22 +6,22 @@ p {
   margin: 0;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-html{
+html {
   font-size: 1.3888vh;
 }
 
-body{
+body {
   margin: 0;
   background-color: #fff;
   font-family: $font-family-base;
   color: $default-text-color;
 }
 
-.container{
+.container {
   width: 1200px;
 }
 
@@ -38,30 +38,30 @@ form elements, icons, tabs, blockquote, container
     margin-bottom: 1.2em;
   }
 
-  }
+}
 
 .small-section {
   padding: 60px 0;
 }
 
-.title{
+.title {
 
   text-align: center;
 
-  .top-title{
+  .top-title {
     font-family: $font-family-design;
     font-size: $top-titile-size;
     color: $title-color;
   }
 
-  .bottom-title{
+  .bottom-title {
     font-family: $font-family-elems;
     font-size: $bottom-titile-size;
     font-weight: bold;
     color: $title-color;
   }
 
-  hr.title-hr{
+  hr.title-hr {
     margin-top: 1.2em;
     border-color: $title-border-color;
   }
@@ -73,11 +73,12 @@ form elements, icons, tabs, blockquote, container
   line-height: $default-text-line-height;
   font-weight: 300;
 }
+
 /* ===== Default component end ===== */
 
 // Default-classes start
 
-.navbar-fixed-top{
+.navbar-fixed-top {
   position: fixed;
   top: 0;
   right: 0;
@@ -87,47 +88,46 @@ form elements, icons, tabs, blockquote, container
 
 // Default-classes end
 
-.main{
-  hr{
+.main {
+  hr {
     margin: 0 auto;
     border-top: 3px solid #ffffff;
   }
 }
 
-
 //HEADER START
 
-header{
+header {
   font-family: $font-family-elems;
 
-  .navbar-brand{
+  .navbar-brand {
     font-weight: 700;
     font-size: 30px;
-    &:hover{
+    &:hover {
       color: #ffffff;
     }
   }
 
-  .nav-menu{
+  .nav-menu {
     font-weight: 400;
     font-size: $nav-items-text-size;
 
-    .nav-item + .nav-item{
-        margin-left: 30px;
+    .nav-item + .nav-item {
+      margin-left: 30px;
     }
 
-    .nav-item{
+    .nav-item {
       padding: 10px 0;
-      &:hover{
+      &:hover {
         border-bottom: 3px solid $nav-active-color;
-        a{
+        a {
           color: $nav-active-color;
         }
       }
 
-      &.active{
+      &.active {
         border-bottom: 3px solid $nav-active-color;
-        a{
+        a {
           color: $nav-active-color;
         }
       }
@@ -135,7 +135,7 @@ header{
 
   }
 
-  a{
+  a {
     color: #fff;
   }
 }
@@ -144,23 +144,23 @@ header{
 
 //PROMOBLOCK START
 
-.promoblock{
+.promoblock {
   background: url(../img/promo_block_img.jpg) no-repeat center / cover;
   padding: 15rem 0;
   background-attachment: fixed;
   @include auto-center();
   //padding-top: 70px;
 
-  .promoblock-content{
+  .promoblock-content {
     height: min-content;
   }
 }
 
-.promoblock-content{
-  .promoblock-title{
+.promoblock-content {
+  .promoblock-title {
     color: #fff;
     padding-bottom: 50px;
-    .promoblock-title-top{
+    .promoblock-title-top {
       font-size: 4.8rem;
       font-family: $font-family-design;
     }
@@ -174,7 +174,7 @@ header{
     }
   }
 
-  .promoblock-btn{
+  .promoblock-btn {
     color: #ffffff;
     padding: 10px 30px;
     font-family: $font-family-elems;
@@ -187,11 +187,11 @@ header{
   }
 }
 
-.office-wrapper{
+.office-wrapper {
 
   margin-top: 6.3rem;
 
-  .office-item{
+  .office-item {
     position: relative;
 
     &.office-item-second {
@@ -206,9 +206,9 @@ header{
       }
     }
 
-    .office-item-hover{
+    .office-item-hover {
       @include item-hover();
-      .office-item-title{
+      .office-item-title {
         @include auto-center();
         flex-direction: column;
         font-family: $font-family-elems;
@@ -218,40 +218,41 @@ header{
         text-transform: uppercase;
       }
 
-      span{
+      span {
         display: block;
       }
 
     }
 
-    & .office-item-img{
+    & .office-item-img {
       transition: background 0.7s;
       transition: opacity 2s cubic-bezier(0.1, -0.6, 0.2, 0);
     }
 
-    &:hover .office-item-img{
+    &:hover .office-item-img {
       background: $substrate-color;
-        img{
-          opacity: 0;
-        }
+      img {
+        opacity: 0;
+      }
     }
 
-    &:hover .office-item-hover{
+    &:hover .office-item-hover {
       opacity: 1;
     }
   }
 }
+
 //PROMOBLOCK END
 
 //HAPPY NUMBERS START
 
-.happy-numbers{
+.happy-numbers {
   background-color: $substrate-color;
 
-  .happy-numbers-wrapper{
+  .happy-numbers-wrapper {
     display: flex;
 
-    .happy-number-block{
+    .happy-number-block {
       width: 20%;
       @include auto-center();
       flex-direction: column;
@@ -260,16 +261,16 @@ header{
       border-right: 1px solid #ffffff;
       padding: 4rem 0;
 
-      .amount{
+      .amount {
         font-weight: 700;
         font-size: 4.8rem;
       }
 
-      .happy-number-block-title{
+      .happy-number-block-title {
         font-size: $nav-items-text-size;
       }
 
-      &:first-child{
+      &:first-child {
         border-left: 1px solid #ffffff;;
       }
     }
@@ -279,31 +280,30 @@ header{
 
 //HAPPY NUMBERS END
 
-
 //SERVICES START
 
 .services {
 
-  .row+.row{
+  .row + .row {
     border-top: 1px solid $light-border-color;
   }
 
-  .service{
+  .service {
     display: flex;
     padding: 4rem 0 3.33rem;
 
-    .service-icon{
+    .service-icon {
       margin: 0 2em;
       max-height: 3rem;
 
-      img{
+      img {
         max-height: 100%;
       }
     }
 
-    .service-description{
+    .service-description {
 
-      .service-title{
+      .service-title {
         color: $title-color;
         font-family: $font-family-elems;
         font-weight: 700;
@@ -311,7 +311,7 @@ header{
         margin-bottom: 1rem;
       }
 
-      .service-text{
+      .service-text {
         font-size: 1rem;
         line-height: 1.6rem;
       }
@@ -323,30 +323,29 @@ header{
 
 //SERVICES END
 
-
 //DESIGN START
 
-.design-block{
-  background:rgba(255, 255, 255, .85) url(../img/design-background.jpg) no-repeat center / cover;
+.design-block {
+  background: rgba(255, 255, 255, .85) url(../img/design-background.jpg) no-repeat center / cover;
   background-blend-mode: screen;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 5.5rem;
 
-  .design-devices{
+  .design-devices {
 
     width: max-content;
     position: relative;
     margin: 0 auto;
 
-    .mobile{
+    .mobile {
       position: absolute;
       bottom: -77px;
       right: -66px;
     }
 
-    img{
+    img {
       display: inline-block;
     }
 
@@ -355,32 +354,31 @@ header{
 
 //DESIGN END
 
-
 //WHAT WE DO START
-.what-we-do{
-  &-description{
+.what-we-do {
+  &-description {
     font-size: $default-text-size;
     margin-bottom: 6rem;
   }
 
-  .box{
+  .box {
 
-    &-link{
+    &-link {
       cursor: pointer;
       padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border: 1px solid $light-border-color;
-      button{
+      button {
         cursor: pointer;
       }
 
-      .box-description{
+      .box-description {
         display: flex;
         align-items: center;
 
-        span{
+        span {
           margin-left: 15px;
           font-size: $nav-items-text-size;
           font-weight: 700;
@@ -389,7 +387,7 @@ header{
       }
     }
 
-    &-text{
+    &-text {
       padding: 20px;
       font-style: italic;
       font-weight: 300;
@@ -399,18 +397,17 @@ header{
       overflow: auto;
     }
 
-
-    .visible{
+    .visible {
       display: block;
     }
 
-    .hidden{
+    .hidden {
       display: none;
     }
 
-  & + .box{
-    margin-top: 10px;
-  }
+    & + .box {
+      margin-top: 10px;
+    }
   }
 }
 
@@ -418,35 +415,35 @@ header{
 
 //REVIEWS CAROUSEL START
 
-.reviews{
+.reviews {
   padding: 4.8rem 0;
   background-color: $grey-section-color;
 
-  .review{
+  .review {
     padding: 0 5rem;
 
-    .review-text{
+    .review-text {
       margin-left: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      p{
+      p {
         font-size: $top-titile-size;
         font-style: italic;
         font-weight: 300;
       }
 
-      .review-author{
+      .review-author {
         display: flex;
         align-items: center;
-        hr{
+        hr {
           border-color: #f38181;
           margin: 0;
           margin-right: 5px;
         }
 
-        span{
+        span {
           font-family: $font-family-design;
           font-size: $top-titile-size;
           color: $title-color;
@@ -454,52 +451,48 @@ header{
       }
     }
 
-
   }
 }
 
-.slick-prev:before
-{
+.slick-prev:before {
   content: url(../img/arrow-prev.png);
 }
-[dir='rtl'] .slick-prev:before
-{
+
+[dir='rtl'] .slick-prev:before {
   content: url(../img/arrow-next.png);
 }
 
-.slick-next
-{
+.slick-next {
   right: -25px;
 }
-[dir='rtl'] .slick-next
-{
+
+[dir='rtl'] .slick-next {
   right: auto;
   left: -25px;
 }
-.slick-next:before
-{
+
+.slick-next:before {
   content: url(../img/arrow-next.png);
 }
-[dir='rtl'] .slick-next:before
-{
-  content:  url(../img/arrow-prev.png);
+
+[dir='rtl'] .slick-next:before {
+  content: url(../img/arrow-prev.png);
 
 }
-
 
 //REVIEWS CAROUSEL END
 
 //MEET OUR TEAM START
 
-.meet-team{
+.meet-team {
 
-  &-wrapper{
-    .member{
+  &-wrapper {
+    .member {
       width: max-content;
       margin: 0 auto;
       margin-top: 2rem;
       text-align: center;
-      &-name{
+      &-name {
         font-family: $font-family-elems;
         font-weight: 700;
         text-transform: uppercase;
@@ -507,19 +500,18 @@ header{
         color: $title-color;
       }
 
-      &-position{
+      &-position {
         font-style: italic;
       }
     }
   }
 
-  &-description{
+  &-description {
     margin-bottom: 6rem;
   }
 
-  &-item{
+  &-item {
     position: relative;
-
 
     &.meet-team-item-first {
       .meet-team-item-hover {
@@ -539,15 +531,15 @@ header{
       }
     }
 
-    &-hover{
+    &-hover {
       @include item-hover();
 
-      .member-links{
-        ul{
+      .member-links {
+        ul {
           list-style: none;
           padding: 0;
 
-          a{
+          a {
             width: 3.7rem;
             height: 3.7rem;
             background-color: #fce38a;
@@ -556,7 +548,7 @@ header{
             @include auto-center();
             transition: all 1s ease-out;
 
-            &:hover{
+            &:hover {
               background-color: #f38181;
               color: #ffffff;
             }
@@ -565,14 +557,14 @@ header{
       }
     }
 
-    &:hover .meet-team-item-img{
+    &:hover .meet-team-item-img {
       background: $substrate-color;
-      img{
+      img {
         opacity: 0;
       }
     }
 
-    &:hover .meet-team-item-hover{
+    &:hover .meet-team-item-hover {
       opacity: 1;
     }
   }
@@ -582,41 +574,39 @@ header{
 
 //LOGO SECTION START
 
-.logo-section{
+.logo-section {
   padding: 4.8rem 0;
   background-color: $grey-section-color;
 }
 
-
 //LOGO SECTION END
 
 //SOME OTHER WORKS START
-.portfolio-box{
+.portfolio-box {
   margin-top: 6rem;
 }
 
-.column-row{
+.column-row {
   width: 25%;
   display: flex;
   flex-direction: column;
 }
 
-.portfolio-item{
+.portfolio-item {
   position: relative;
 
-
-  &-hover{
+  &-hover {
     @include portfolio-item-hover();
-    .portfolio-item-title{
-      span{
+    .portfolio-item-title {
+      span {
         display: block;
       }
 
-      img{
+      img {
         max-width: 30px;
       }
 
-      .portfolio-name{
+      .portfolio-name {
         font-family: $font-family-elems;
         font-size: $nav-items-text-size;
         text-transform: uppercase;
@@ -624,7 +614,7 @@ header{
         margin: 1rem 0 .2rem;
       }
 
-      .portfolio-description{
+      .portfolio-description {
         font-style: italic;
       }
       display: flex;
@@ -634,7 +624,7 @@ header{
     }
   }
 
-  &:hover .portfolio-item-hover{
+  &:hover .portfolio-item-hover {
     opacity: 1;
   }
 }
@@ -643,34 +633,34 @@ header{
 
 //REQUEST CAROUSEL START
 
-.requests{
+.requests {
   padding-bottom: 5.5rem;
 
-  .request{
+  .request {
     padding: 0 5rem;
 
-    .request-text{
+    .request-text {
       margin-left: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      p{
+      p {
         font-size: $top-titile-size;
         font-style: italic;
         font-weight: 300;
       }
 
-      .request-author{
+      .request-author {
         display: flex;
         align-items: center;
-        hr{
+        hr {
           border-color: #f38181;
           margin: 0;
           margin-right: 5px;
         }
 
-        span{
+        span {
           font-family: $font-family-design;
           font-size: $top-titile-size;
           color: $title-color;
@@ -678,83 +668,159 @@ header{
       }
     }
 
-
   }
 }
 
-.slick-prev:before
-{
+.slick-prev:before {
   content: url(../img/arrow-prev.png);
 }
-[dir='rtl'] .slick-prev:before
-{
+
+[dir='rtl'] .slick-prev:before {
   content: url(../img/arrow-next.png);
 }
 
-.slick-next
-{
+.slick-next {
   right: -25px;
 }
-[dir='rtl'] .slick-next
-{
+
+[dir='rtl'] .slick-next {
   right: auto;
   left: -25px;
 }
-.slick-next:before
-{
+
+.slick-next:before {
   content: url(../img/arrow-next.png);
 }
-[dir='rtl'] .slick-next:before
-{
-  content:  url(../img/arrow-prev.png);
+
+[dir='rtl'] .slick-next:before {
+  content: url(../img/arrow-prev.png);
 
 }
-
 
 //REQUEST CAROUSEL END
 
 //WHAT PEOPLE SAY START
 .people-say {
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url(../img/design-background.jpg) no-repeat center / cover;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url(../img/design-background.jpg) no-repeat center / cover;
   padding: 15rem 0;
   background-attachment: fixed;
   @include auto-center();
 
-  .request{
+  .request {
     padding: 40px;
   }
 
-  .request-image{
+  .request-image {
     flex: 1;
   }
 
-  .request-text{
+  .request-text {
     flex: 4;
     margin-left: 1.8rem;
   }
 
-  .request-author{
-    color:$title-color;
-    span{
+  .request-author {
+    color: $title-color;
+    span {
       display: block;
     }
 
-    .name{
+    .name {
       text-transform: uppercase;
       font-family: $font-family-elems;
       font-size: $nav-items-text-size;
       font-weight: 700;
     }
-    
-    .position{
+
+    .position {
       font-style: italic;
       font-weight: 300;
     }
 
-    hr{
+    hr {
       margin: 1rem 0;
       border-color: #f38181;
     }
   }
 }
+
 //WHAT PEOPLE SAY END
+
+//LATEST BLOG START
+.latest-blog {
+
+  .posts{
+    margin-top: 6rem;
+  }
+
+  .post {
+    .post-img-container{
+      position: relative;
+
+    .post-data {
+      position: absolute;
+      left: -2%;
+      bottom: 4%;
+      background-color: $substrate-color;
+      font-family: $font-family-elems;
+      color: #ffffff;
+      padding: 1rem;
+      line-height: 1;
+
+      .day {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .month {
+        font-size: 1rem;
+        font-style: italic;
+      }
+
+      span {
+        display: block;
+      }
+    }
+    //post-data
+  }
+
+    .post-text{
+      border-bottom: 1px solid $light-border-color;
+      padding-bottom: 1.33rem;
+
+      .post-title{
+        font-family: $font-family-elems;
+        color: $title-color;
+        font-size: $nav-items-text-size;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 1.33rem 0;
+        line-height: 1;
+      }
+
+    }
+    //post-text
+
+    .post-interaction{
+      font-style: italic;
+      font-size: 1rem;
+      margin-top: 1.33rem;
+
+      .views{
+        margin-right: 1.33em;
+      }
+    }
+  }
+
+}
+
+//LATEST BLOG END
+
+.social-blog{
+
+  .logo-social {
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: $font-family-elems;
+  }
+}
