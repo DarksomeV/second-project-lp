@@ -816,11 +816,163 @@ header {
 
 //LATEST BLOG END
 
-.social-blog{
+//SOCIAL INFORMATION START
 
-  .logo-social {
-    font-weight: 700;
-    font-size: 4rem;
-    font-family: $font-family-elems;
+.social-blog{
+  background-color: $grey-section-color;
+  .social-form {
+    flex: 3;
+
+    .logo-social {
+      font-weight: 700;
+      font-size: 4rem;
+      font-family: $font-family-elems;
+    }
+
+    .company-description{
+      padding-right: 1rem;
+      margin: 3rem 0;
+    }
+
+    .social-media{
+
+      &-followers{
+        font-family: $font-family-elems;
+        font-size: $nav-items-text-size;
+        color: $title-color;
+        font-weight: bolder;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $light-border-color;
+        .amount{
+          font-size: 1.2rem;
+          font-weight: bolder;
+        }
+      }
+
+      &-links{
+        margin-bottom: 1.6rem;
+
+        &>span{
+          font-style: italic;
+        }
+
+        .icons{
+          margin-left: 1em;
+
+          a{
+            color: $substrate-color;
+          }
+
+          a+a{
+            margin-left: 0.5em;
+          }
+        }
+      }
+    }
+
+    .subscribe-form{
+      height: 2.6rem;
+
+      &>.form-group{
+        height: 100%;
+        width: 47%;
+      }
+
+      input[type="email"]  {
+        @include placeholder();
+        border-radius: 0;
+        font-style: italic;
+        width: 100%;
+      }
+
+      button{
+        border-radius: 0;
+        border: none;
+        font-family: $font-family-elems;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: $substrate-color;
+        margin: 0;
+        height: 100%;
+      }
+    }
+  }
+
+  .social-blogs{
+    flex: 2;
+    text-transform: uppercase;
+    color: $title-color;
+    font-size: 1rem;
+    font-weight: bold;
+
+    .blog{
+      display: flex;
+      margin-top: 2rem;
+
+      &-info{
+        margin: auto 0;
+        margin-left: 1rem;
+      }
+
+
+      &-img{
+        min-width: 120px;
+      }
+
+      &-date{
+        display: block;
+        font-family: $font-family-base;
+        font-size: $nav-items-text-size;
+        color: $default-text-color;
+        font-style: italic;
+      }
+    }
+  }
+
+  .instagram{
+    flex: 2;
+
+    &-title{
+      text-transform: uppercase;
+      color: $title-color;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    &-photos{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+
+      img{
+        width: 33%;
+        padding-bottom: 2px;
+        &+img{
+          padding-left: 2px;
+        }
+      }
+    }
+  }
+
+}
+
+//SOCIAL INFORMATION END
+
+//FOOTER START
+.copyright{
+  padding: 1rem 0;
+  text-align: center;
+  font-family: $font-family-elems;
+  font-size: $nav-items-text-size;
+  color: $title-color;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $light-border-color;
+  span{
+    color: $title-border-color;
+    margin-left: 3px;
   }
 }
+//FOOTER END

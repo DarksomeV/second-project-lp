@@ -694,7 +694,126 @@ header {
   .latest-blog .post .post-interaction .views {
     margin-right: 1.33em; }
 
-.social-blog .logo-social {
-  font-weight: 700;
-  font-size: 4rem;
-  font-family: "Montserrat", sans-serif; }
+.social-blog {
+  background-color: #f8f8f8; }
+  .social-blog .social-form {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3; }
+    .social-blog .social-form .logo-social {
+      font-weight: 700;
+      font-size: 4rem;
+      font-family: "Montserrat", sans-serif; }
+    .social-blog .social-form .company-description {
+      padding-right: 1rem;
+      margin: 3rem 0; }
+    .social-blog .social-form .social-media-followers {
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.93rem;
+      color: #333333;
+      font-weight: bolder;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #e5e5e5; }
+      .social-blog .social-form .social-media-followers .amount {
+        font-size: 1.2rem;
+        font-weight: bolder; }
+    .social-blog .social-form .social-media-links {
+      margin-bottom: 1.6rem; }
+      .social-blog .social-form .social-media-links > span {
+        font-style: italic; }
+      .social-blog .social-form .social-media-links .icons {
+        margin-left: 1em; }
+        .social-blog .social-form .social-media-links .icons a {
+          color: #95e1d3; }
+        .social-blog .social-form .social-media-links .icons a + a {
+          margin-left: 0.5em; }
+    .social-blog .social-form .subscribe-form {
+      height: 2.6rem; }
+      .social-blog .social-form .subscribe-form > .form-group {
+        height: 100%;
+        width: 47%; }
+      .social-blog .social-form .subscribe-form input[type="email"] {
+        border-radius: 0;
+        font-style: italic;
+        width: 100%; }
+        .social-blog .social-form .subscribe-form input[type="email"]::-webkit-input-placeholder {
+          color: #999999; }
+        .social-blog .social-form .subscribe-form input[type="email"]:-moz-placeholder {
+          color: #999999; }
+        .social-blog .social-form .subscribe-form input[type="email"]::-moz-placeholder {
+          color: #999999; }
+        .social-blog .social-form .subscribe-form input[type="email"]:-ms-input-placeholder {
+          color: #999999; }
+      .social-blog .social-form .subscribe-form button {
+        border-radius: 0;
+        border: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #95e1d3;
+        margin: 0;
+        height: 100%; }
+  .social-blog .social-blogs {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: bold; }
+    .social-blog .social-blogs .blog {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 2rem; }
+      .social-blog .social-blogs .blog-info {
+        margin: auto 0;
+        margin-left: 1rem; }
+      .social-blog .social-blogs .blog-img {
+        min-width: 120px; }
+      .social-blog .social-blogs .blog-date {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.93rem;
+        color: #999999;
+        font-style: italic; }
+  .social-blog .instagram {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2; }
+    .social-blog .instagram-title {
+      text-transform: uppercase;
+      color: #333333;
+      font-size: 1rem;
+      font-weight: bold; }
+    .social-blog .instagram-photos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-top: 2rem; }
+      .social-blog .instagram-photos img {
+        width: 33%;
+        padding-bottom: 2px; }
+        .social-blog .instagram-photos img + img {
+          padding-left: 2px; }
+
+.copyright {
+  padding: 1rem 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.93rem;
+  color: #333333;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #e5e5e5; }
+  .copyright span {
+    color: #f38181;
+    margin-left: 3px; }

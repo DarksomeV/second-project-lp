@@ -53,5 +53,12 @@ $grey-section-color: #f8f8f8;
   align-items: center;
 }
 
+@mixin placeholder {
+  &::-webkit-input-placeholder { color: $default-text-color; }
+  &:-moz-placeholder           { color: $default-text-color; }
+  &::-moz-placeholder          { color: $default-text-color; }
+  &:-ms-input-placeholder      { color: $default-text-color; }
+}
+
 
 
