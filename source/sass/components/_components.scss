@@ -45,7 +45,6 @@ form elements, icons, tabs, blockquote, container
 }
 
 .title {
-
   text-align: center;
 
   .top-title {
@@ -74,6 +73,16 @@ form elements, icons, tabs, blockquote, container
   font-weight: 300;
 }
 
+.arrow-up{
+  font-size:4rem;
+  display: none;
+  color: $substrate-color;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  cursor: pointer;
+}
+
 /* ===== Default component end ===== */
 
 // Default-classes start
@@ -99,7 +108,10 @@ form elements, icons, tabs, blockquote, container
 
 header {
   font-family: $font-family-elems;
-
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   .navbar-brand {
     font-weight: 700;
     font-size: 30px;
@@ -111,24 +123,28 @@ header {
   .nav-menu {
     font-weight: 400;
     font-size: $nav-items-text-size;
+    .navbar-nav {
+      align-items: center;
+    }
 
     .nav-item + .nav-item {
       margin-left: 30px;
     }
 
     .nav-item {
-      padding: 10px 0;
-      &:hover {
-        border-bottom: 3px solid $nav-active-color;
-        a {
-          color: $nav-active-color;
+      padding: 0;
+      .nav-link {
+        border-bottom: 3px solid transparent;
+        &:hover {
+          border-bottom: 3px solid $nav-active-color;
+            color: $nav-active-color;
         }
       }
 
       &.active {
-        border-bottom: 3px solid $nav-active-color;
-        a {
-          color: $nav-active-color;
+        .nav-link {
+          border-bottom: 3px solid $nav-active-color;
+            color: $nav-active-color;
         }
       }
     }
@@ -140,13 +156,37 @@ header {
   }
 }
 
+.move-header{
+  .nav-menu {
+    .nav-item {
+      padding: 0;
+      .nav-link {
+      &:hover {
+        border-bottom: 3px solid #ffffff;
+          color: #ffffff;
+          font-weight: bold;
+      }
+      }
+
+      &.active {
+        .nav-link {
+          border-bottom: 3px solid #ffffff;
+            color: #ffffff;
+            font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
 //HEADER END
 
 //PROMOBLOCK START
 
 .promoblock {
   background: url(../img/promo_block_img.jpg) no-repeat center / cover;
-  padding: 15rem 0;
+  //padding: 15rem 0;
+  height: 100vh;
   background-attachment: fixed;
   @include auto-center();
   //padding-top: 70px;
@@ -189,7 +229,7 @@ header {
 
 .office-wrapper {
 
-  margin-top: 6.3rem;
+  margin-top: $margin-within-block-p;
 
   .office-item {
     position: relative;
@@ -284,7 +324,7 @@ header {
 
 .services {
 
-  .row + .row {
+  .row hr {
     border-top: 1px solid $light-border-color;
   }
 
@@ -358,7 +398,7 @@ header {
 .what-we-do {
   &-description {
     font-size: $default-text-size;
-    margin-bottom: 6rem;
+    margin-bottom: $margin-within-block-p;
   }
 
   .box {
@@ -507,7 +547,7 @@ header {
   }
 
   &-description {
-    margin-bottom: 6rem;
+    margin-bottom: $margin-within-block-p;
   }
 
   &-item {
@@ -516,18 +556,21 @@ header {
     &.meet-team-item-first {
       .meet-team-item-hover {
         background: linear-gradient(0deg, rgba(252, 227, 138, .8) 0%, rgba(243, 129, 129, .8) 100%), url(../img/team-member-1.jpg);
+        background-size: cover;
       }
     }
 
     &.meet-team-item-second {
       .meet-team-item-hover {
         background: linear-gradient(0deg, rgba(252, 227, 138, .8) 0%, rgba(243, 129, 129, .8) 100%), url(../img/team-member-2.jpg);
+        background-size: cover;
       }
     }
 
     &.meet-team-item-third {
       .meet-team-item-hover {
         background: linear-gradient(0deg, rgba(252, 227, 138, .8) 0%, rgba(243, 129, 129, .8) 100%), url(../img/team-member-3.jpg);
+        background-size: cover;
       }
     }
 
@@ -583,7 +626,7 @@ header {
 
 //SOME OTHER WORKS START
 .portfolio-box {
-  margin-top: 6rem;
+  margin-top: $margin-within-block-p;
 }
 
 .column-row {
@@ -750,7 +793,7 @@ header {
 .latest-blog {
 
   .posts{
-    margin-top: 6rem;
+    margin-top: $margin-within-block-p;
   }
 
   .post {
@@ -815,6 +858,15 @@ header {
 }
 
 //LATEST BLOG END
+.map-wrapper{
+  background-color: rgba(255, 88, 57, 0.8);
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
 
 //SOCIAL INFORMATION START
 

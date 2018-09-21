@@ -23,7 +23,7 @@ function showText(e) {
         button.innerHTML = '<i class="fa fa-chevron-down"></i>';
     } else {
         content.classList.remove('hidden');
-        content.classList.add('visible');
+        content.classList.add('visible', 'wow', 'bounceInUp');
         button.innerHTML = '<i class="fa fa-chevron-up"></i>';
     }
 }

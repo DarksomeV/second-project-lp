@@ -1,0 +1,243 @@
+//Default component start
+
+@media (max-width: 1200px) {
+
+}
+
+//Default component end
+
+
+// --------------------------------------------------
+// HEADER START
+// --------------------------------------------------
+
+//Media queries for large devices
+@media (max-width: 1200px) {
+  header {
+    .navbar-brand {
+      font-size: 25px;
+    }
+  }
+}
+
+//Media queries for medium devices
+@media (max-width: 991px) {
+  header {
+    font-family: $font-family-elems;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 30px;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    .nav-menu {
+      font-weight: 400;
+      font-size: $nav-items-text-size;
+      .navbar-nav {
+        align-items: flex-start;
+      }
+
+      .nav-item + .nav-item {
+        margin-left: 0;
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+// --------------------------------------------------
+// HEADER END
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// PROMOBLOCK START
+// --------------------------------------------------
+
+//Media queries for large devices
+@media (max-width: 1200px) {
+  .office-wrapper {
+    margin-top: 3rem;
+  }
+}
+
+//Media queries for medium devices
+@media (max-width: 991px) {
+  .promoblock-content {
+    .promoblock-title {
+      padding-bottom: 25px;
+      .promoblock-title-top {
+        font-size: 2.9rem;
+      }
+      .promoblock-title-bottom {
+        font-size: 6rem;
+      }
+    }
+    .promoblock-btn {
+      margin-top: 25px;
+    }
+  }
+}
+
+// --------------------------------------------------
+// PROMOBLOCK END
+// --------------------------------------------------
+
+
+//HAPPY NUMBERS START
+
+//Media queries for large devices
+
+
+//HAPPY NUMBERS END
+
+
+// --------------------------------------------------
+// SERVICES START
+// --------------------------------------------------
+
+
+
+// --------------------------------------------------
+// SERVICES END
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// DESIGN START
+// --------------------------------------------------
+
+//Media queries for medium devices
+@media (max-width: 991px) {
+  .design-block {
+    .design-devices {
+      max-width: 70%;
+    }
+  }
+}
+
+// --------------------------------------------------
+// DESIGN END
+// --------------------------------------------------
+
+
+//WHAT WE DO START
+
+//WHAT WE DO END
+
+//REVIEWS CAROUSEL START
+
+//REVIEWS CAROUSEL END
+
+
+// --------------------------------------------------
+// MEET OUR TEAM START
+// --------------------------------------------------
+
+//Media queries for medium devices
+@media (max-width: 991px) {
+  .meet-team {
+    .meet-team-description{
+      font-size: 1.3rem;
+    }
+
+    &-wrapper {
+      .member {
+        &-name {
+          font-size: $nav-items-text-size + 0.7rem;
+        }
+        &-position{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// MEET OUR TEAM END
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// LOGO SECTION START
+// --------------------------------------------------
+
+//Media queries for medium devices
+@media (max-width: 991px) {
+  .logo-section {
+    img{
+      max-width: 80%;
+    }
+  }
+}
+
+// --------------------------------------------------
+// LOGO SECTION END
+// --------------------------------------------------
+
+//SOME OTHER WORKS START
+
+//SOME OTHER WORKS END
+
+//REQUEST CAROUSEL START
+
+//REQUEST CAROUSEL END
+
+
+// --------------------------------------------------
+// WHAT PEOPLE SAY START
+// --------------------------------------------------
+
+//Media queries for medium devices
+@media (max-width: 991px) {
+.people-say {
+  padding: 5rem 0;
+
+  .request {
+    padding: 20px;
+  }
+}
+}
+// --------------------------------------------------
+// WHAT PEOPLE SAY END
+// --------------------------------------------------
+
+// --------------------------------------------------
+// MAP START
+// --------------------------------------------------
+
+#map {
+  height: 200px;
+}
+
+// --------------------------------------------------
+// MAP END
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// LATEST BLOG START
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// LATEST BLOG END
+// --------------------------------------------------
+
+//SOCIAL INFORMATION START
+
+//SOCIAL INFORMATION END
+
+//FOOTER START
+
+//FOOTER END

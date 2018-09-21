@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(document).ready(function(){
   //init slick carousel
   $('.reviews-carousel').slick({
@@ -11,3 +13,4 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
     });
  });
+
