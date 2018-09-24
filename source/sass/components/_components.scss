@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
 }
 
 /* ===== Default component start ===== */
@@ -227,6 +227,10 @@ header {
   }
 }
 
+//PROMOBLOCK END
+
+//ABOUT US START
+
 .office-wrapper {
 
   margin-top: $margin-within-block-p;
@@ -282,7 +286,8 @@ header {
   }
 }
 
-//PROMOBLOCK END
+//ABOUT US END
+
 
 //HAPPY NUMBERS START
 
@@ -352,7 +357,6 @@ header {
       }
 
       .service-text {
-        font-size: 1rem;
         line-height: 1.6rem;
       }
     }
@@ -630,7 +634,8 @@ header {
 }
 
 .column-row {
-  width: 25%;
+  padding-left:0;
+  padding-right:0;
   display: flex;
   flex-direction: column;
 }
@@ -643,6 +648,7 @@ header {
     .portfolio-item-title {
       span {
         display: block;
+        cursor: pointer;
       }
 
       img {
@@ -791,6 +797,9 @@ header {
 
 //LATEST BLOG START
 .latest-blog {
+  .container{
+    width: 100%;
+  }
 
   .posts{
     margin-top: $margin-within-block-p;
@@ -849,8 +858,11 @@ header {
       font-size: 1rem;
       margin-top: 1.33rem;
 
-      .views{
+      .views, .comments{
         margin-right: 1.33em;
+        & > * {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -1000,9 +1012,7 @@ header {
       img{
         width: 33%;
         padding-bottom: 2px;
-        &+img{
-          padding-left: 2px;
-        }
+        padding-right: 2px;
       }
     }
   }

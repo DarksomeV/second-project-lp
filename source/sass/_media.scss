@@ -4,6 +4,18 @@
 
 }
 
+@media (max-width: 576px) {
+  body{
+    font-size: 1.5rem;
+  }
+  .default-section {
+    padding: 2.5rem 0;
+  }
+  .default-text {
+    font-size: $default-text-size + 0.5rem;
+  }
+}
+
 //Default component end
 
 
@@ -40,7 +52,7 @@
       font-weight: 400;
       font-size: $nav-items-text-size;
       .navbar-nav {
-        align-items: flex-start;
+        align-items: center;
       }
 
       .nav-item + .nav-item {
@@ -50,6 +62,19 @@
 
     a {
       color: #fff;
+    }
+  }
+}
+
+//Media queries for Small devices
+@media (max-width: 767px) {
+  header {
+    .nav-menu {
+      font-size: $nav-items-text-size + 1rem;
+      .navbar-nav {
+        align-items: center;
+        background-color: rgba(0,0,0, .4);
+      }
     }
   }
 }
@@ -88,14 +113,66 @@
   }
 }
 
+//Media queries for Small devices
+@media (max-width: 767px) {
+  .promoblock {
+    height: auto;
+    padding: 175px 0;
+
+    .promoblock-content {
+      .promoblock-btn {
+        color: #ffffff;
+        padding: 5px 15px;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+//Media queries for UltraSmall devices
+@media (max-width: 479px) {
+  .promoblock-content {
+    .promoblock-title {
+      padding-bottom: 25px;
+      .promoblock-title-top {
+        font-size: 20px;
+      }
+      .promoblock-title-bottom {
+        font-size: 30px;
+      }
+    }
+    .promoblock-btn {
+      margin-top: 25px;
+    }
+  }
+}
+
 // --------------------------------------------------
 // PROMOBLOCK END
 // --------------------------------------------------
 
 
-//HAPPY NUMBERS START
+// --------------------------------------------------
+// ABOUT US START
+// --------------------------------------------------
 
-//Media queries for large devices
+//Media queries for Small devices
+@media (max-width: 767px) {
+  .office-wrapper{
+    .col-sm-12{
+      @include auto-center();
+
+      &+.col-sm-12{
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// ABOUT US END
+// --------------------------------------------------
+//HAPPY NUMBERS START
 
 
 //HAPPY NUMBERS END
@@ -105,7 +182,24 @@
 // SERVICES START
 // --------------------------------------------------
 
+//Media queries for Small devices
+@media (max-width: 767px) {
+  .services{
+    .col-sm-12{
+      @include auto-center();
+    }
+  }
+}
 
+//Media queries for Extra-Small devices
+@media (max-width: 576px){
+  .services{
+    .service{
+      padding-top:2rem;
+      padding-bottom:2rem;
+    }
+  }
+}
 
 // --------------------------------------------------
 // SERVICES END
@@ -125,20 +219,52 @@
   }
 }
 
+//Media queries for extra small devices
+@media (max-width: 576px) {
+  .design-block {
+    .design-devices {
+      .mobile {
+        display: none;
+      }
+    }
+  }
+}
+
 // --------------------------------------------------
 // DESIGN END
 // --------------------------------------------------
 
+//Media queries for Small devices
+@media (max-width: 767px) {
+  .what-we-do {
+    padding-top: 2.5rem;
 
-//WHAT WE DO START
+    .default-section{
+      padding-bottom:3rem;
+    }
 
-//WHAT WE DO END
+    .box {
+      &-text {
+        padding: 1rem;
+        height: 10vh;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// WHAT WE DO START
+// --------------------------------------------------
+
+
+
+// --------------------------------------------------
+// WHAT WE DO END
+// --------------------------------------------------
 
 //REVIEWS CAROUSEL START
 
 //REVIEWS CAROUSEL END
-
-
 // --------------------------------------------------
 // MEET OUR TEAM START
 // --------------------------------------------------
@@ -163,36 +289,74 @@
   }
 }
 
-// --------------------------------------------------
-// MEET OUR TEAM END
-// --------------------------------------------------
+//Media queries for Small devices
+@media (max-width: 767px) {
+  .meet-team {
 
-
-// --------------------------------------------------
-// LOGO SECTION START
-// --------------------------------------------------
-
-//Media queries for medium devices
-@media (max-width: 991px) {
-  .logo-section {
-    img{
-      max-width: 80%;
+    &-wrapper {
+      .member {
+        margin-bottom: 2rem;
+      }
+    }
+    &-item {
+      width: fit-content;
+      margin: 0 auto;
     }
   }
 }
 
 // --------------------------------------------------
-// LOGO SECTION END
+// MEET OUR TEAM END
 // --------------------------------------------------
 
-//SOME OTHER WORKS START
+//LOGO SECTION START
 
-//SOME OTHER WORKS END
+//LOGO SECTION END
+
+
+// --------------------------------------------------
+// SOME OTHER WORKS START
+// --------------------------------------------------
+//Media queries for medium devices
+@media (max-width: 991px) {
+  .column-row {
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .portfolio-box.row{
+    margin: 0;
+  }
+}
+
+// --------------------------------------------------
+// SOME OTHER WORKS END
+// --------------------------------------------------
 
 //REQUEST CAROUSEL START
 
-//REQUEST CAROUSEL END
+//Media queries for medium devices
+@media (max-width: 991px) {
+  .slick-prev {
+    left: -10px;
+  }
 
+  .slick-next {
+    right: -10px;
+  }
+}
+
+//Media queries for small devices
+@media (max-width: 576px) {
+  .portfolio-item-img {
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+//REQUEST CAROUSEL END
 
 // --------------------------------------------------
 // WHAT PEOPLE SAY START
@@ -200,14 +364,30 @@
 
 //Media queries for medium devices
 @media (max-width: 991px) {
-.people-say {
-  padding: 5rem 0;
+  .people-say {
+    padding: 5rem 0;
 
-  .request {
-    padding: 20px;
+    .request {
+      padding: 20px;
+    }
   }
 }
+
+//Media queries for Small devices
+@media (max-width: 767px) {
+  .people-say {
+    .request-text {
+      font-size: 1.5rem;
+    }
+
+    .request-author {
+      .name {
+        font-size: $nav-items-text-size+1rem;
+      }
+    }
+  }
 }
+
 // --------------------------------------------------
 // WHAT PEOPLE SAY END
 // --------------------------------------------------
@@ -216,8 +396,10 @@
 // MAP START
 // --------------------------------------------------
 
-#map {
-  height: 200px;
+@media (max-width: 991px) {
+  #map {
+    height: 200px;
+  }
 }
 
 // --------------------------------------------------
@@ -229,12 +411,154 @@
 // LATEST BLOG START
 // --------------------------------------------------
 
+//Media queries for Small devices
+@media (max-width: 767px) {
+  .latest-blog {
+    .post {
+      width: fit-content;
+      margin: 0 auto;
+
+      .post-interaction {
+        margin-top: 0.4rem;
+      }
+
+      .post-text {
+        font-size: 1.4rem;
+        .post-title {
+          font-size: $nav-items-text-size + 0.4rem;
+        }
+      }
+
+      .post-img-container{
+        width: fit-content;
+        margin: auto;
+      }
+    }
+  }
+}
 
 // --------------------------------------------------
 // LATEST BLOG END
 // --------------------------------------------------
 
+
 //SOCIAL INFORMATION START
+//Media queries for medium devices
+@media (max-width: 991px) {
+  .social-blog {
+    background-color: $grey-section-color;
+
+    .social-blogs{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .social-form {
+      display: block;
+      width: 100%;
+      flex: none;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid $light-border-color;
+
+      .logo-social {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .company-description {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .social-media {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .subscribe-form {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+    .instagram {
+      flex: 2;
+
+      &-photos {
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+//Media queries for Small devices
+@media (max-width: 767px) {
+  .social-blog {
+    background-color: $grey-section-color;
+    font-size: 1.5rem;
+    .social-blogs {
+      display: block;
+      width: 100%;
+      flex: none;
+      margin-bottom: 2rem;
+      margin-right: 0;
+      margin-left: 0;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid $light-border-color;
+      font-size: 1.5rem;
+      .blog{
+        width: 360px;
+        margin: auto;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 10px;
+
+        &-date{
+          font-size: $nav-items-text-size+0.5rem;
+        }
+      }
+
+    }
+    .instagram{
+      .instagram-title{
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .instagram-photos{
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+//Media queries for ExtraSmall devices
+@media (max-width: 576px) {
+  .form-group{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .social-blog {
+    .social-blogs {
+      font-size: 1.3rem;
+      .blog {
+        width: 270px;
+      }
+    }
+
+    .instagram {
+      .instagram-photos {
+        width: 270px;
+      }
+    }
+  }
+}
+
+
+
 
 //SOCIAL INFORMATION END
 

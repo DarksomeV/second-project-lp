@@ -24,6 +24,10 @@ button {
   &:focus{
     outline:none;
   }
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 a{
@@ -31,5 +35,6 @@ a{
 
   &:hover{
     text-decoration: none;
+    cursor: pointer;
   }
 }
